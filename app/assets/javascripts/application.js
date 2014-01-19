@@ -10,4 +10,6 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require_directory ./mixins
+//= require_directory ./components
 //= require_tree .
