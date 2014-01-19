@@ -14,7 +14,7 @@ TodoApp = React.createClass
               'Task'
             div className: 'col-sm-9',
               input id: 'new-todo', className: 'form-control', placeholder: 'What needs to be done?'
-            button className: 'btn btn-default col-sm-2',
+            button className: 'btn btn-primary col-sm-2',
               'submit'
       footer id: 'todo-footer',
         "footer"
