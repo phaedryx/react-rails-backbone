@@ -1,2 +1,4 @@
-<h1>Todo#index</h1>
-<p>Find me in app/views/todo/index.html.erb</p>
+<% content_for :javascript do %>
+  React.renderComponent(TodoApp(), document.getElementById('todo-app'));
+<% end %>
+<div id="todo-app"></div>
