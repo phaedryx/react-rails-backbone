@@ -22,11 +22,13 @@ ModelMixin =
 
 Hello = React.createClass(
   mixins: [ModelMixin]
+
   getDefaultProps: ->
     Message = Backbone.Model.extend({})
-    message = new Message({text: "World!"})
-    {message: message}
+    {message: new Message({text: "World!"})}
+
   getBackBoneModels: -> [@props.message]
+
   render: ->
     div {},
       h1 {},
