@@ -2,9 +2,34 @@
 {form, input, label, button}   = React.DOM
 {h1, ul, li}                   = React.DOM
 
+# Todo = Backbone.Model.extend
+#   defaults:
+#     title: ''
+#     completed: false
+
+#   toggle: -> @save(completed: !@get('completed'))
+
+# TodoList = Backbone.Collection.extend
+#   model: Todo
+
+#   localStorage: new Store('todos-react-backbone')
+
+#   completed: ->
+#     @filter( (todo) -> todo.get('completed') )
+
+#   remaining: ->
+#     @without.apply(this, @completed())
+
+#   nextOrder: ->
+#     return 1 if !@length
+#     @last().get('order') + 1
+
+#   comparator: (todo) -> todo.get('order')
+
+
 TodoApp = React.createClass
   render: ->
-    section id: 'todo',
+    section id: 'todo-app',
       header id: 'todo-header',
         h1 {},
           "todos"

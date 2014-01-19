@@ -1,4 +1,4 @@
 <% content_for :javascript do %>
-  React.renderComponent(TodoApp(), document.getElementById('todo-app'));
+  React.renderComponent(TodoApp(), $("TodoApp")[0]);
 <% end %>
-<div id="todo-app"></div>
+<TodoApp></TodoApp>
